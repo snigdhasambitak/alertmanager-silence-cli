@@ -22,7 +22,6 @@ var (
 	comment = kingpin.Flag("comment", "comment attached to the silence. Recommended to add the jira ticket").Default("auto-silencer").Short('C').String()
 	amURL = kingpin.Flag("URL", "Alertmanager URL").Default("http://127.0.0.1").Short('u').String()
 	timeout = kingpin.Flag("timeout", "Alertmanager connection timeout").Default("3").Short('t').Int()
-	debug = kingpin.Flag("debug", "Print debug information").Envar("ESTAFETTE_EXTENSION_DEBUG").Bool()
 )
 
 func main() {
