@@ -18,7 +18,7 @@ Flags:
 ```
 ## Build the code
 
-Using the makefile we can build, tag and push the cli to google registry
+Using the makefile we can build, tag and push the cli to docker registry
 
 ```
 DOCKERFLAGS := --rm -v $(CURDIR):/app:rw -w /app
